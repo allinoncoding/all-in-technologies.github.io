@@ -159,7 +159,7 @@
 <!-- Scripts for countdown -->
 <script>
   // Set your launch date here (e.g., 30 days from now)
-  const launchDate = new Date().getTime() + (30 * 24 * 60 * 60 * 1000); // 30 days from now
+  const launchDate = new Date().getTime() + (100 * 24 * 60 * 60 * 1000); // 30 days from now
 
   const countdown = document.getElementById('countdown');
 
