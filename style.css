@@ -1,0 +1,220 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 :root \{\
+    --bg-color: #000000; /* Black from logo */\
+    --text-color: #FFFFFF; /* White from logo */\
+    --accent-red: #E74C3C; /* Red from logo */\
+    --accent-yellow: #F1C40F; /* Yellow from logo */\
+    --accent-blue: #3498DB; /* Blue from logo */\
+    --accent-teal: #1ABC9C; /* Teal/Green from logo */\
+    --gradient-start: #3498DB; /* Blue for gradient */\
+    --gradient-end: #E74C3C; /* Red for gradient */\
+\}\
+\
+/* Base Styles */\
+body \{\
+    margin: 0;\
+    font-family: 'Montserrat', sans-serif; /* A professional, modern font */\
+    background-color: var(--bg-color);\
+    color: var(--text-color);\
+    display: flex;\
+    justify-content: center;\
+    align-items: center;\
+    min-height: 100vh;\
+    padding: 20px;\
+    box-sizing: border-box;\
+    overflow-x: hidden; /* Prevent horizontal scroll */\
+\}\
+\
+.container \{\
+    width: 100%;\
+    max-width: 900px; /* Max width for content */\
+    text-align: center;\
+\}\
+\
+/* Header */\
+header \{\
+    padding: 20px 0;\
+    margin-bottom: 40px;\
+\}\
+\
+.logo-area \{\
+    display: flex;\
+    justify-content: center;\
+    align-items: center;\
+    gap: 20px;\
+\}\
+\
+.logo \{\
+    max-width: 300px; /* Adjust based on actual logo size */\
+    height: auto;\
+    animation: fadeIn 2s ease-out; /* Fade in logo */\
+\}\
+\
+/* Main Content */\
+.hero-section \{\
+    padding: 40px 20px;\
+\}\
+\
+.mission-statement \{\
+    font-family: 'Roboto', sans-serif; /* A readable font for the statement */\
+    font-size: 2.8em;\
+    font-weight: 700;\
+    color: var(--text-color);\
+    line-height: 1.2;\
+    margin-bottom: 20px;\
+    letter-spacing: -0.02em;\
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);\
+\}\
+\
+.tagline \{\
+    font-size: 1.3em;\
+    font-weight: 400;\
+    color: rgba(255, 255, 255, 0.7);\
+    margin-bottom: 60px;\
+    animation-delay: 0.5s; /* Delay slide-up after mission statement */\
+\}\
+\
+.coming-soon h2 \{\
+    font-size: 3.5em;\
+    font-weight: 700;\
+    color: transparent; /* Make text transparent initially */\
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-red)); /* Apply gradient */\
+    -webkit-background-clip: text; /* Clip background to text */\
+    background-clip: text; /* Standard property */\
+    margin-bottom: 15px;\
+    letter-spacing: 2px;\
+\}\
+\
+.coming-soon p \{\
+    font-size: 1.1em;\
+    margin-bottom: 30px;\
+\}\
+\
+/* Subscribe Form */\
+.subscribe-form \{\
+    display: flex;\
+    justify-content: center;\
+    flex-wrap: wrap; /* Allow wrapping on small screens */\
+    gap: 15px;\
+    max-width: 500px;\
+    margin: 0 auto;\
+\}\
+\
+.subscribe-form input[type="email"] \{\
+    flex-grow: 1; /* Allows input to take available space */\
+    padding: 15px 20px;\
+    border: 2px solid rgba(255, 255, 255, 0.3);\
+    background-color: rgba(255, 255, 255, 0.05);\
+    color: var(--text-color);\
+    border-radius: 8px;\
+    font-size: 1em;\
+    outline: none;\
+    transition: border-color 0.3s ease, background-color 0.3s ease;\
+\}\
+\
+.subscribe-form input[type="email"]::placeholder \{\
+    color: rgba(255, 255, 255, 0.5);\
+\}\
+\
+.subscribe-form input[type="email"]:focus \{\
+    border-color: var(--accent-blue);\
+    background-color: rgba(255, 255, 255, 0.1);\
+\}\
+\
+.subscribe-form button \{\
+    padding: 15px 30px;\
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-teal)); /* Dynamic gradient button */\
+    color: var(--text-color);\
+    border: none;\
+    border-radius: 8px;\
+    font-size: 1em;\
+    font-weight: 600;\
+    cursor: pointer;\
+    transition: transform 0.2s ease, box-shadow 0.2s ease;\
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);\
+\}\
+\
+.subscribe-form button:hover \{\
+    transform: translateY(-2px);\
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);\
+\}\
+\
+/* Footer */\
+footer \{\
+    padding: 40px 20px 20px;\
+    font-size: 0.9em;\
+    color: rgba(255, 255, 255, 0.5);\
+    margin-top: 60px;\
+\}\
+\
+/* Animations */\
+@keyframes fadeIn \{\
+    from \{ opacity: 0; transform: translateY(20px); \}\
+    to \{ opacity: 1; transform: translateY(0); \}\
+\}\
+\
+@keyframes slideUp \{\
+    from \{ opacity: 0; transform: translateY(30px); \}\
+    to \{ opacity: 1; transform: translateY(0); \}\
+\}\
+\
+@keyframes pulse \{\
+    0% \{ transform: scale(1); opacity: 0.8; \}\
+    50% \{ transform: scale(1.03); opacity: 1; \}\
+    100% \{ transform: scale(1); opacity: 0.8; \}\
+\}\
+\
+.fade-in \{\
+    animation: fadeIn 1s ease-out forwards;\
+\}\
+\
+.slide-up \{\
+    animation: slideUp 1s ease-out forwards;\
+    animation-delay: 0.8s; /* Stagger animation */\
+    opacity: 0; /* Hide initially */\
+\}\
+\
+.pulse \{\
+    animation: pulse 2s infinite ease-in-out;\
+    animation-delay: 1.5s; /* Stagger animation */\
+\}\
+\
+\
+/* Responsive Design */\
+@media (max-width: 768px) \{\
+    .mission-statement \{\
+        font-size: 2em;\
+    \}\
+    .coming-soon h2 \{\
+        font-size: 2.5em;\
+    \}\
+    .tagline \{\
+        font-size: 1.1em;\
+    \}\
+    .subscribe-form input[type="email"],\
+    .subscribe-form button \{\
+        width: 100%;\
+        max-width: 300px; /* Keep elements from being too wide on small screens */\
+    \}\
+\}\
+\
+@media (max-width: 480px) \{\
+    .logo \{\
+        max-width: 200px;\
+    \}\
+    .mission-statement \{\
+        font-size: 1.5em;\
+    \}\
+    .coming-soon h2 \{\
+        font-size: 2em;\
+    \}\
+    .subscribe-form \{\
+        flex-direction: column;\
+    \}\
+\}}
